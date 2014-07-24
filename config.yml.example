@@ -1,0 +1,14 @@
+# vim: set ft=yaml :
+
+# List of services to manage
+services:
+  wordpress: ~
+
+# Interval in seconds to wait between successful proactive changes
+change_interval: 600
+
+# Interval in seconds to wait between retries of proactive changes
+change_retry_interval: 30
+
+# Clean up machines after unit is removed
+remove_machines: false
