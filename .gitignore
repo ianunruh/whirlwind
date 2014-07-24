@@ -1,2 +1,6 @@
+# Generated files
 *.pyc
+.vagrant
+
+# Environment-specific files
 config.yml
