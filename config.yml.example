@@ -1,5 +1,8 @@
 # vim: set ft=yaml :
 
+# Juju environment
+environment: amazon
+
 # List of services to manage
 services:
   wordpress: ~
