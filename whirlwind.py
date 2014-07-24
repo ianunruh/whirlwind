@@ -38,6 +38,8 @@ class Worker(object):
             try:
                 log.debug('Connecting to state server for environment: %s', self.config.environment)
                 return Environment.connect(self.config.environment)
+            except KeyboardInterrupt:
+                return
             except:
                 log.exception('Could not connect to state server')
 
@@ -152,7 +154,7 @@ def main():
         sys.exit(1)
 
 def configure_logger(verbose):
-    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s', '%Y-%m-%d %H:%M:%S')
 
     handler = logging.StreamHandler(sys.stdout)
     handler.setFormatter(formatter)
