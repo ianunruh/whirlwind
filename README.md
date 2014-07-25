@@ -2,6 +2,8 @@
 
 Proactive change agent for services managed by Juju
 
+[![CHANGE PLACES!](http://img.4plebs.org/boards/tg/image/1396/09/1396099837812.jpg)](https://www.youtube.com/watch?v=8tYXfssLOSM)
+
 ### Features
 
 To experiment with proactive change of services, this tool watches a Juju deployment and performs unit replacement. Units for working services get replaced every 10 minutes, by default. The replacement interval, as well as the watched services, are configurable by the end user.
