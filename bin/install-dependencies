@@ -1,7 +1,11 @@
 #!/bin/bash
+set -ex
+
+export DEBIAN_FRONTEND=noninteractive
+
 add-apt-repository ppa:juju/stable
 
-apt-get update -q
+apt-get update -qq
 apt-get install -yqq python-pip juju-core
 
-pip install -r requirements.txt
+pip install -q -r requirements.txt
